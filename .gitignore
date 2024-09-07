@@ -1,0 +1,46 @@
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log
+yarn-error.log
+
+# TypeScript
+*.tsbuildinfo
+*.d.ts
+*.js
+*.jsx
+*.js.map
+*.jsx.map
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs_analysis.dat
+*.njsproj
+*.sln
+
+# Optional: Coveralls
+coverage/
+
+# Optional: PM2 logs
+pids/
+*.pid
+*.seed
