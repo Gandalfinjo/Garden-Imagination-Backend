@@ -4,6 +4,10 @@ import Admin from "../models/admin";
 export class AdminController {
     login = (req: express.Request, res: express.Response) => {
         Admin.findOne({ username: req.body.username, password: req.body.password }).then(admin => {
+            if (!admin) {
+                return res.status(401).json({ message: "Wrong credentials"});
+            }
+            
             res.status(200).json(admin);
         }).catch(error => {
             res.status(500).json({ message: error.message });
